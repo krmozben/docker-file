@@ -61,6 +61,7 @@ services:
       - 27017:27017
     volumes:
       - mongo:/data/db
+#MONGO DB
 #KAFKA
   zookeeper:
     image: confluentinc/cp-zookeeper:7.0.1
@@ -94,7 +95,6 @@ services:
     environment:
       ZK_HOSTS: "zookeeper:2181"
 #KAFKA
-#MONGO DB
 volumes:
   redis:
     driver: local
